@@ -42,7 +42,7 @@ public class WordGameApplication {
 		String api_key = "169c08ab92msh0b7fe475c8aa506p19466fjsn1bbfbe410e1a";
 		String host = "wordsapiv1.p.rapidapi.com";
 
-		URL url = new URL("https://wordsapiv1.p.rapidapi.com/words/?random=true");
+		URL url = new URL("https://wordsapiv1.p.rapidapi.com/words/?random=true&lettersMin=5&lettersMax=5&hasDetails=definitions,partsOfSpeech,synonyms,antonyms,examples");
 		HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 
 		urlConnection.setRequestProperty("X-RapidAPI-Key", api_key);
